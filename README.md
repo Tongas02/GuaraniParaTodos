@@ -10,4 +10,4 @@ mediante pruebas a los usuarios del funcionamiento del mismo.
 - IDE: Android Studio
 - JDK: javac 25.0.1
 - Base de datos: MySQL
-- Plataforma: Android Studio
+- Plataforma: Android 
