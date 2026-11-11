@@ -1,59 +1,356 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:background="#F7F5EE">
 
-    <LinearLayout
+    <!-- MARCA DE AGUA DEL LOGO -->
+    <ImageView
+        android:layout_width="460dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:alpha="0.025"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_guarani" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false">
 
-        <TextView
-            android:id="@+id/txtBienvenida"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bienvenido a Guaraní Para Todos"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="30dp" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnDiccionario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Diccionario"
-            android:layout_marginBottom="12dp" />
+            <!-- ====================== -->
+            <!-- CABECERA -->
+            <!-- ====================== -->
 
-        <Button
-            android:id="@+id/btnNiveles"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Actividades por niveles"
-            android:layout_marginBottom="12dp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:background="@color/verde_oscuro">
 
-        <Button
-            android:id="@+id/btnProgreso"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mi progreso"
-            android:layout_marginBottom="12dp" />
+                <!-- PEQUEÑO DETALLE DORADO -->
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/dorado" />
 
-        <Button
-            android:id="@+id/btnPerfil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mi perfil"
-            android:layout_marginBottom="25dp" />
+                <!-- LOGO REAL -->
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="155dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Guaraní Para Todos"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo_guarani" />
 
-        <Button
-            android:id="@+id/btnCerrarSesion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cerrar sesión" />
+            </FrameLayout>
 
-    </LinearLayout>
+            <!-- SE CONSERVA POR TU JAVA -->
+            <TextView
+                android:id="@+id/txtBienvenida"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible" />
 
-</ScrollView>
+            <!-- ====================== -->
+            <!-- CONTENIDO -->
+            <!-- ====================== -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingTop="30dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    android:text="¿Qué querés hacer hoy?"
+                    android:textColor="#1E2925"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <!-- ====================== -->
+                <!-- DICCIONARIO -->
+                <!-- ====================== -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp">
+
+                        <FrameLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/bg_icon_menu">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_book" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_weight="1"
+                            android:text="Diccionario"
+                            android:textColor="#1E2925"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_chevron_right" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnDiccionario"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:elevation="0dp"
+                        android:stateListAnimator="@null"
+                        android:text="" />
+
+                </FrameLayout>
+
+
+                <!-- ====================== -->
+                <!-- ACTIVIDADES -->
+                <!-- ====================== -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp">
+
+                        <FrameLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/bg_icon_menu">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_levels" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_weight="1"
+                            android:text="Actividades por Niveles"
+                            android:textColor="#1E2925"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_chevron_right" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnNiveles"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:elevation="0dp"
+                        android:stateListAnimator="@null"
+                        android:text="" />
+
+                </FrameLayout>
+
+
+                <!-- ====================== -->
+                <!-- PROGRESO -->
+                <!-- ====================== -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp">
+
+                        <FrameLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/bg_icon_menu">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_progress" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_weight="1"
+                            android:text="Mi Progreso"
+                            android:textColor="#1E2925"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_chevron_right" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnProgreso"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:elevation="0dp"
+                        android:stateListAnimator="@null"
+                        android:text="" />
+
+                </FrameLayout>
+
+
+                <!-- ====================== -->
+                <!-- PERFIL -->
+                <!-- ====================== -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp">
+
+                        <FrameLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/bg_icon_menu">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_profile" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_weight="1"
+                            android:text="Mi Perfil"
+                            android:textColor="#1E2925"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_chevron_right" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnPerfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:elevation="0dp"
+                        android:stateListAnimator="@null"
+                        android:text="" />
+
+                </FrameLayout>
+
+
+                <!-- CERRAR SESIÓN -->
+
+                <Button
+                    android:id="@+id/btnCerrarSesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_logout_profesional"
+                    android:backgroundTint="@null"
+                    android:elevation="2dp"
+                    android:stateListAnimator="@null"
+                    android:text="Cerrar sesión"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

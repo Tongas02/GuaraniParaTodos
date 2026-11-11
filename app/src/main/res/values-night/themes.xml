@@ -1,7 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.GuaraníParaTodos" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <style name="Base.Theme.GuaraníParaTodos"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- COLORES PRINCIPALES -->
+        <item name="colorPrimary">#63B991</item>
+        <item name="colorOnPrimary">#0D2D22</item>
+
+        <item name="colorSecondary">#E0B85D</item>
+        <item name="colorOnSecondary">#231B0D</item>
+
+        <item name="colorTertiary">#8AD1AF</item>
+        <item name="colorOnTertiary">#102B21</item>
+
+        <!-- FONDO OSCURO -->
+        <item name="android:windowBackground">#101A16</item>
+        <item name="colorSurface">#18241F</item>
+        <item name="colorOnSurface">#F3F5F4</item>
+
+        <!-- BARRA SUPERIOR -->
+        <item name="android:statusBarColor">#0B2D22</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- BARRA INFERIOR -->
+        <item name="android:navigationBarColor">#101A16</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="android:colorAccent">#63B991</item>
+
     </style>
+
 </resources>

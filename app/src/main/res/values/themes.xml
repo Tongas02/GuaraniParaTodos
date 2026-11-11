@@ -1,9 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.GuaraníParaTodos" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Base.Theme.GuaraníParaTodos"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- COLORES PRINCIPALES -->
+        <item name="colorPrimary">@color/verde_principal</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/dorado</item>
+        <item name="colorOnSecondary">@color/texto_oscuro</item>
+
+        <item name="colorTertiary">@color/verde_oscuro</item>
+        <item name="colorOnTertiary">@color/white</item>
+
+        <!-- FONDO GENERAL -->
+        <item name="android:windowBackground">@color/fondo_app</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/texto_oscuro</item>
+
+        <!-- BARRA SUPERIOR DEL CELULAR -->
+        <item name="android:statusBarColor">@color/verde_oscuro</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- BARRA INFERIOR DEL CELULAR -->
+        <item name="android:navigationBarColor">@color/fondo_app</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- COLOR DE CONTROLES -->
+        <item name="android:colorAccent">@color/verde_principal</item>
+
     </style>
 
-    <style name="Theme.GuaraníParaTodos" parent="Base.Theme.GuaraníParaTodos" />
+    <style name="Theme.GuaraníParaTodos"
+        parent="Base.Theme.GuaraníParaTodos" />
+
 </resources>
