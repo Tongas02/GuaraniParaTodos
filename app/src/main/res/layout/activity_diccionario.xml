@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver"
+            android:layout_marginBottom="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diccionario"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edtBuscarPalabra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar en guaraní o español"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <LinearLayout
+            android:id="@+id/contenedorResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtPalabraBuscada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTipoSignificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/txtSignificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:id="@+id/btnReproducirAudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="▶ Escuchar pronunciación"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ejemplos de utilización"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:id="@+id/txtEjemplos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conjugación"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:id="@+id/txtSinConjugacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esta palabra no posee conjugación."
+                android:visibility="gone"
+                android:layout_marginTop="10dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollConjugacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+
+                <TableLayout
+                    android:id="@+id/tablaConjugacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*" />
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aprendizaje"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="40dp" />
+
+        <Button
+            android:id="@+id/btnBasico"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="1   Nivel Básico"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnIntermedio"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="2   Nivel Intermedio"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnAvanzado"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="3   Nivel Avanzado"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi Progreso"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp" />
+
+
+        <!-- BÁSICO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel Básico"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progresoBasico"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtProgresoBasico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txtEstadoBasico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pendiente"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+
+        <!-- INTERMEDIO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel Intermedio"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progresoIntermedio"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtProgresoIntermedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txtEstadoIntermedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔒 Bloqueado"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+
+        <!-- AVANZADO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel Avanzado"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progresoAvanzado"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtProgresoAvanzado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txtEstadoAvanzado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔒 Bloqueado"
+            android:textStyle="bold"
+            android:layout_marginBottom="35dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumen"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+
+        <TextView
+            android:id="@+id/txtActividadesCompletadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividades completadas: 0"
+            android:textSize="18sp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

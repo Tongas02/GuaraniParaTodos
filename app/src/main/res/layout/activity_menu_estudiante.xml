@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido a Guaraní Para Todos"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/btnDiccionario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diccionario"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnNiveles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividades por niveles"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnProgreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi progreso"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi perfil"
+            android:layout_marginBottom="25dp" />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar sesión" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Actividades"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerNivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de actividad"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de la actividad" />
+
+        <EditText
+            android:id="@+id/edtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción o indicación"
+            android:minLines="2"
+            android:gravity="top"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- COMPLETAR -->
+
+        <LinearLayout
+            android:id="@+id/contenedorCompletar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Completar"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtEnunciadoCompletar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: Che ___ ógape"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/edtRespuestaCompletar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Respuesta correcta" />
+
+        </LinearLayout>
+
+
+        <!-- RELLENAR -->
+
+        <LinearLayout
+            android:id="@+id/contenedorRellenar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rellenar"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtEnunciadoRellenar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: Escriba en guaraní: Casa"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/edtRespuestaRellenar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Respuesta correcta" />
+
+        </LinearLayout>
+
+
+        <!-- SELECCIÓN MÚLTIPLE -->
+
+        <LinearLayout
+            android:id="@+id/contenedorSeleccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selección múltiple"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtEnunciadoSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pregunta"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/edtOpcion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opción 1" />
+
+            <CheckBox
+                android:id="@+id/chkOpcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correcta" />
+
+            <EditText
+                android:id="@+id/edtOpcion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opción 2" />
+
+            <CheckBox
+                android:id="@+id/chkOpcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correcta" />
+
+            <EditText
+                android:id="@+id/edtOpcion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opción 3" />
+
+            <CheckBox
+                android:id="@+id/chkOpcion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correcta" />
+
+            <EditText
+                android:id="@+id/edtOpcion4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opción 4 (opcional)" />
+
+            <CheckBox
+                android:id="@+id/chkOpcion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correcta" />
+
+            <EditText
+                android:id="@+id/edtOpcion5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opción 5 (opcional)" />
+
+            <CheckBox
+                android:id="@+id/chkOpcion5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correcta" />
+
+            <EditText
+                android:id="@+id/edtOpcion6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opción 6 (opcional)" />
+
+            <CheckBox
+                android:id="@+id/chkOpcion6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correcta" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnGuardarActividad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar actividad"
+            android:layout_marginTop="30dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividades registradas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            android:id="@+id/contenedorActividades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/txtSinActividades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No hay actividades registradas."
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver"
+            android:layout_marginBottom="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión del Diccionario"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <EditText
+            android:id="@+id/edtGuarani"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Palabra en guaraní" />
+
+        <EditText
+            android:id="@+id/edtEspanol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Significado en español"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audio de pronunciación"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/btnSeleccionarAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📁 Seleccionar archivo MP3"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtAudioSeleccionado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ningún archivo seleccionado"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnEscucharAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="▶ Escuchar audio"
+            android:enabled="false"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ejemplos de utilización"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/edtEjemplo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo 1" />
+
+        <EditText
+            android:id="@+id/edtEjemplo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo 2"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtEjemplo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ejemplo 3"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/chkConjugacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esta palabra posee conjugación"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp" />
+
+        <LinearLayout
+            android:id="@+id/contenedorConjugacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnGuardarPalabra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar palabra"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi Perfil"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="35dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo electrónico"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="correo@ejemplo.com"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de usuario"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtTipoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESTUDIANTE"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tema de la aplicación"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spinnerTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/btnGuardarCambios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar cambios" />
+
+    </LinearLayout>
+
+</ScrollView>

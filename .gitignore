@@ -1,0 +1,12 @@
+.gradle/
+.idea/
+local.properties
+**/build/
+*.iml
+
+.externalNativeBuild/
+.cxx/
+captures/
+
+# Archivo de configuración local de Firebase
+app/google-services.json
