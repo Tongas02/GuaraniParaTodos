@@ -4,7 +4,7 @@
     android:height="34dp"
     android:viewportWidth="24"
     android:viewportHeight="24"
-    android:tint="#B46B43">
+    android:tint="@color/icono_menu">
 
     <path
         android:fillColor="@android:color/white"

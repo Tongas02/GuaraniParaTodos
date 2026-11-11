@@ -2,9 +2,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7F5EE">
+    android:background="@color/fondo_app">
 
-    <!-- MARCA DE AGUA DEL LOGO -->
+    <!-- LOGO DIFUMINADO DE FONDO -->
     <ImageView
         android:layout_width="460dp"
         android:layout_height="230dp"
@@ -17,32 +17,20 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:clipToPadding="false">
+        android:clipToPadding="false"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- ====================== -->
-            <!-- CABECERA -->
-            <!-- ====================== -->
-
+            <!-- ENCABEZADO -->
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="235dp"
                 android:background="@color/verde_oscuro">
 
-                <!-- PEQUEÑO DETALLE DORADO -->
-                <View
-                    android:layout_width="70dp"
-                    android:layout_height="3dp"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="20dp"
-                    android:background="@color/dorado" />
-
-                <!-- LOGO REAL -->
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="155dp"
@@ -53,17 +41,14 @@
 
             </FrameLayout>
 
-            <!-- SE CONSERVA POR TU JAVA -->
+            <!-- SE MANTIENE POR EL CÓDIGO JAVA -->
             <TextView
                 android:id="@+id/txtBienvenida"
                 android:layout_width="1dp"
                 android:layout_height="1dp"
                 android:visibility="invisible" />
 
-            <!-- ====================== -->
             <!-- CONTENIDO -->
-            <!-- ====================== -->
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,15 +63,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="22dp"
                     android:text="¿Qué querés hacer hoy?"
-                    android:textColor="#1E2925"
+                    android:textColor="@color/texto_oscuro"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
-
-                <!-- ====================== -->
                 <!-- DICCIONARIO -->
-                <!-- ====================== -->
-
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="92dp"
@@ -121,7 +102,7 @@
                             android:layout_marginLeft="18dp"
                             android:layout_weight="1"
                             android:text="Diccionario"
-                            android:textColor="#1E2925"
+                            android:textColor="@color/texto_oscuro"
                             android:textSize="19sp"
                             android:textStyle="bold" />
 
@@ -144,11 +125,7 @@
 
                 </FrameLayout>
 
-
-                <!-- ====================== -->
                 <!-- ACTIVIDADES -->
-                <!-- ====================== -->
-
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="92dp"
@@ -183,7 +160,7 @@
                             android:layout_marginLeft="18dp"
                             android:layout_weight="1"
                             android:text="Actividades por Niveles"
-                            android:textColor="#1E2925"
+                            android:textColor="@color/texto_oscuro"
                             android:textSize="19sp"
                             android:textStyle="bold" />
 
@@ -206,11 +183,7 @@
 
                 </FrameLayout>
 
-
-                <!-- ====================== -->
                 <!-- PROGRESO -->
-                <!-- ====================== -->
-
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="92dp"
@@ -245,7 +218,7 @@
                             android:layout_marginLeft="18dp"
                             android:layout_weight="1"
                             android:text="Mi Progreso"
-                            android:textColor="#1E2925"
+                            android:textColor="@color/texto_oscuro"
                             android:textSize="19sp"
                             android:textStyle="bold" />
 
@@ -268,11 +241,7 @@
 
                 </FrameLayout>
 
-
-                <!-- ====================== -->
                 <!-- PERFIL -->
-                <!-- ====================== -->
-
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="92dp"
@@ -307,7 +276,7 @@
                             android:layout_marginLeft="18dp"
                             android:layout_weight="1"
                             android:text="Mi Perfil"
-                            android:textColor="#1E2925"
+                            android:textColor="@color/texto_oscuro"
                             android:textSize="19sp"
                             android:textStyle="bold" />
 
@@ -330,9 +299,7 @@
 
                 </FrameLayout>
 
-
                 <!-- CERRAR SESIÓN -->
-
                 <Button
                     android:id="@+id/btnCerrarSesion"
                     android:layout_width="match_parent"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="verde_oscuro">#0B2D22</color>
+    <color name="verde_principal">#63B991</color>
+    <color name="verde_claro">#24352D</color>
+
+    <color name="crema">#101815</color>
+    <color name="dorado">#D5AD58</color>
+
+    <color name="texto_oscuro">#F2F6F4</color>
+    <color name="texto_secundario">#AEBBB4</color>
+
+    <color name="fondo_app">#101815</color>
+    <color name="fondo_tarjeta">#18231E</color>
+
+    <color name="borde_tarjeta">#31453B</color>
+    <color name="fondo_icono_menu">#25372F</color>
+    <color name="icono_menu">#8FD1AE</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- COLORES PRINCIPALES -->
+    <!-- IDENTIDAD -->
     <color name="verde_oscuro">#174A3A</color>
     <color name="verde_principal">#2E7D5B</color>
     <color name="verde_claro">#E6F2EC</color>
 
-    <!-- COLORES SECUNDARIOS -->
     <color name="crema">#F7F4EA</color>
     <color name="dorado">#D6A84B</color>
 
@@ -14,12 +13,17 @@
     <color name="texto_oscuro">#1E2925</color>
     <color name="texto_secundario">#66736D</color>
 
+    <!-- FONDOS -->
+    <color name="fondo_app">#F7F5EE</color>
+    <color name="fondo_tarjeta">#FFFFFF</color>
+
+    <!-- TARJETAS E ICONOS -->
+    <color name="borde_tarjeta">#DDE4DF</color>
+    <color name="fondo_icono_menu">#E8F0EC</color>
+    <color name="icono_menu">#21664C</color>
+
     <!-- BÁSICOS -->
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-
-    <!-- FONDOS -->
-    <color name="fondo_app">#F7F4EA</color>
-    <color name="fondo_tarjeta">#FFFFFF</color>
 
 </resources>
