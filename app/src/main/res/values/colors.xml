@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <!-- COLORES PRINCIPALES -->
+    <color name="verde_oscuro">#174A3A</color>
+    <color name="verde_principal">#2E7D5B</color>
+    <color name="verde_claro">#E6F2EC</color>
+
+    <!-- COLORES SECUNDARIOS -->
+    <color name="crema">#F7F4EA</color>
+    <color name="dorado">#D6A84B</color>
+
+    <!-- TEXTOS -->
+    <color name="texto_oscuro">#1E2925</color>
+    <color name="texto_secundario">#66736D</color>
+
+    <!-- BÁSICOS -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- FONDOS -->
+    <color name="fondo_app">#F7F4EA</color>
+    <color name="fondo_tarjeta">#FFFFFF</color>
+
 </resources>
