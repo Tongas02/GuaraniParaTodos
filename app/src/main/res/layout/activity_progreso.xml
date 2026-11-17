@@ -1,156 +1,312 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:background="@color/fondo_app">
 
-    <LinearLayout
+    <ImageView
+        android:layout_width="460dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:alpha="0.025"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_guarani" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true">
 
-        <Button
-            android:id="@+id/btnVolver"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="← Volver" />
-
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mi Progreso"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="35dp" />
+            android:orientation="vertical">
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/verde_oscuro">
 
-        <!-- BÁSICO -->
+                <Button
+                    android:id="@+id/btnVolver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:minHeight="0dp"
+                    android:stateListAnimator="@null"
+                    android:text="← Volver"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nivel Básico"
-            android:textSize="21sp"
-            android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="270dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Guaraní Para Todos"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo_guarani" />
 
-        <ProgressBar
-            android:id="@+id/progresoBasico"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="100"
-            android:progress="0"
-            android:layout_marginTop="10dp" />
+            </FrameLayout>
 
-        <TextView
-            android:id="@+id/txtProgresoBasico"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0%"
-            android:textSize="18sp"
-            android:layout_marginTop="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingTop="28dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="40dp">
 
-        <TextView
-            android:id="@+id/txtEstadoBasico"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pendiente"
-            android:textStyle="bold"
-            android:layout_marginBottom="30dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mi Progreso"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Seguí tu avance en cada nivel"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="14sp" />
 
-        <!-- INTERMEDIO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nivel Intermedio"
-            android:textSize="21sp"
-            android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
 
-        <ProgressBar
-            android:id="@+id/progresoIntermedio"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="100"
-            android:progress="0"
-            android:layout_marginTop="10dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Nivel Básico"
+                            android:textColor="@color/texto_oscuro"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/txtProgresoIntermedio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0%"
-            android:textSize="18sp"
-            android:layout_marginTop="5dp" />
+                        <TextView
+                            android:id="@+id/txtProgresoBasico"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textColor="@color/verde_principal"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/txtEstadoIntermedio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🔒 Bloqueado"
-            android:textStyle="bold"
-            android:layout_marginBottom="30dp" />
+                    </LinearLayout>
 
+                    <ProgressBar
+                        android:id="@+id/progresoBasico"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="16dp"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressBackgroundTint="@color/borde_tarjeta"
+                        android:progressTint="@color/verde_principal" />
 
-        <!-- AVANZADO -->
+                    <TextView
+                        android:id="@+id/txtEstadoBasico"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Pendiente"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nivel Avanzado"
-            android:textSize="21sp"
-            android:textStyle="bold" />
+                </LinearLayout>
 
-        <ProgressBar
-            android:id="@+id/progresoAvanzado"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="100"
-            android:progress="0"
-            android:layout_marginTop="10dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
 
-        <TextView
-            android:id="@+id/txtProgresoAvanzado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0%"
-            android:textSize="18sp"
-            android:layout_marginTop="5dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txtEstadoAvanzado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🔒 Bloqueado"
-            android:textStyle="bold"
-            android:layout_marginBottom="35dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Nivel Intermedio"
+                            android:textColor="@color/texto_oscuro"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
 
+                        <TextView
+                            android:id="@+id/txtProgresoIntermedio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textColor="@color/verde_principal"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Resumen"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="10dp" />
+                    </LinearLayout>
 
+                    <ProgressBar
+                        android:id="@+id/progresoIntermedio"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="16dp"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressBackgroundTint="@color/borde_tarjeta"
+                        android:progressTint="@color/verde_principal" />
 
-        <TextView
-            android:id="@+id/txtActividadesCompletadas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Actividades completadas: 0"
-            android:textSize="18sp"
-            android:layout_marginBottom="30dp" />
+                    <TextView
+                        android:id="@+id/txtEstadoIntermedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="🔒 Bloqueado"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
-    </LinearLayout>
+                </LinearLayout>
 
-</ScrollView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Nivel Avanzado"
+                            android:textColor="@color/texto_oscuro"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtProgresoAvanzado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textColor="@color/verde_principal"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progresoAvanzado"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="16dp"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressBackgroundTint="@color/borde_tarjeta"
+                        android:progressTint="@color/verde_principal" />
+
+                    <TextView
+                        android:id="@+id/txtEstadoAvanzado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="🔒 Bloqueado"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Resumen"
+                        android:textColor="@color/texto_oscuro"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Resumen general de tu aprendizaje"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtActividadesCompletadas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="Actividades completadas: 0"
+                        android:textColor="@color/texto_oscuro"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center"
+                    android:text="Alcanzá al menos el 70 % para avanzar al siguiente nivel."
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
