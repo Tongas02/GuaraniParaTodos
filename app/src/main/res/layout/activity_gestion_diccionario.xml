@@ -1,127 +1,362 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/fondo_app">
 
-    <LinearLayout
+    <ImageView
+        android:layout_width="460dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:alpha="0.025"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_guarani" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp">
-        <Button
-            android:id="@+id/btnVolver"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="← Volver"
-            android:layout_marginBottom="15dp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Gestión del Diccionario"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="25dp" />
-
-        <EditText
-            android:id="@+id/edtGuarani"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Palabra en guaraní" />
-
-        <EditText
-            android:id="@+id/edtEspanol"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Significado en español"
-            android:layout_marginTop="10dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Audio de pronunciación"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:layout_marginTop="15dp" />
-
-        <Button
-            android:id="@+id/btnSeleccionarAudio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="📁 Seleccionar archivo MP3"
-            android:layout_marginTop="8dp" />
-
-        <TextView
-            android:id="@+id/txtAudioSeleccionado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ningún archivo seleccionado"
-            android:textSize="14sp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp" />
-
-        <Button
-            android:id="@+id/btnEscucharAudio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="▶ Escuchar audio"
-            android:enabled="false"
-            android:layout_marginBottom="15dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ejemplos de utilización"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="10dp" />
-
-        <EditText
-            android:id="@+id/edtEjemplo1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ejemplo 1" />
-
-        <EditText
-            android:id="@+id/edtEjemplo2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ejemplo 2"
-            android:layout_marginTop="8dp" />
-
-        <EditText
-            android:id="@+id/edtEjemplo3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ejemplo 3"
-            android:layout_marginTop="8dp" />
-
-        <CheckBox
-            android:id="@+id/chkConjugacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Esta palabra posee conjugación"
-            android:textStyle="bold"
-            android:layout_marginTop="25dp" />
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true">
 
         <LinearLayout
-            android:id="@+id/contenedorConjugacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone"
-            android:layout_marginTop="10dp" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnGuardarPalabra"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Guardar palabra"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="30dp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/verde_oscuro">
 
-    </LinearLayout>
+                <Button
+                    android:id="@+id/btnVolver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:minHeight="0dp"
+                    android:stateListAnimator="@null"
+                    android:text="← Volver"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-</ScrollView>
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="155dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Guaraní Para Todos"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo_guarani" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingTop="28dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gestión del Diccionario"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="22dp"
+                    android:text="Registrá palabras y su contenido educativo"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Información de la palabra"
+                        android:textColor="@color/texto_oscuro"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Datos principales del diccionario"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/edtGuarani"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/bg_busqueda_diccionario"
+                        android:hint="Palabra en guaraní"
+                        android:inputType="textCapSentences"
+                        android:paddingStart="17dp"
+                        android:paddingEnd="17dp"
+                        android:singleLine="true"
+                        android:textColor="@color/texto_oscuro"
+                        android:textColorHint="@color/texto_secundario"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edtEspanol"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_busqueda_diccionario"
+                        android:hint="Significado en español"
+                        android:inputType="textCapSentences"
+                        android:paddingStart="17dp"
+                        android:paddingEnd="17dp"
+                        android:singleLine="true"
+                        android:textColor="@color/texto_oscuro"
+                        android:textColorHint="@color/texto_secundario"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pronunciación"
+                        android:textColor="@color/texto_oscuro"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="El audio es opcional"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:id="@+id/btnSeleccionarAudio"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="17dp"
+                        android:background="@drawable/bg_button_secondary"
+                        android:backgroundTint="@null"
+                        android:drawableStart="@drawable/ic_folder"
+                        android:drawablePadding="10dp"
+                        android:elevation="0dp"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="Seleccionar archivo MP3"
+                        android:textAllCaps="false"
+                        android:textColor="@color/verde_principal"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAudioSeleccionado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="4dp"
+                        android:text="Ningún archivo seleccionado"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnEscucharAudio"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/bg_accion_verde"
+                        android:backgroundTint="@null"
+                        android:drawableStart="@drawable/ic_volume"
+                        android:drawablePadding="10dp"
+                        android:enabled="false"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="Escuchar audio"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ejemplos de utilización"
+                        android:textColor="@color/texto_oscuro"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Podés registrar hasta tres ejemplos"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/edtEjemplo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/bg_busqueda_diccionario"
+                        android:gravity="center_vertical"
+                        android:hint="Ejemplo 1"
+                        android:inputType="textCapSentences"
+                        android:paddingStart="17dp"
+                        android:paddingEnd="17dp"
+                        android:singleLine="true"
+                        android:textColor="@color/texto_oscuro"
+                        android:textColorHint="@color/texto_secundario"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtEjemplo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/bg_busqueda_diccionario"
+                        android:gravity="center_vertical"
+                        android:hint="Ejemplo 2"
+                        android:inputType="textCapSentences"
+                        android:paddingStart="17dp"
+                        android:paddingEnd="17dp"
+                        android:singleLine="true"
+                        android:textColor="@color/texto_oscuro"
+                        android:textColorHint="@color/texto_secundario"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtEjemplo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/bg_busqueda_diccionario"
+                        android:gravity="center_vertical"
+                        android:hint="Ejemplo 3"
+                        android:inputType="textCapSentences"
+                        android:paddingStart="17dp"
+                        android:paddingEnd="17dp"
+                        android:singleLine="true"
+                        android:textColor="@color/texto_oscuro"
+                        android:textColorHint="@color/texto_secundario"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_card_menu_profesional"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Conjugación"
+                        android:textColor="@color/texto_oscuro"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Activá esta opción únicamente cuando corresponda"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="13sp" />
+
+                    <CheckBox
+                        android:id="@+id/chkConjugacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:buttonTint="@color/verde_principal"
+                        android:text="Esta palabra posee conjugación"
+                        android:textColor="@color/texto_oscuro"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/contenedorConjugacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnGuardarPalabra"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_accion_verde"
+                    android:backgroundTint="@null"
+                    android:drawableStart="@drawable/ic_save"
+                    android:drawablePadding="10dp"
+                    android:elevation="3dp"
+                    android:gravity="center"
+                    android:stateListAnimator="@null"
+                    android:text="Guardar palabra"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
